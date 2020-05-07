@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.page-bg{
+    background:url("../img/1.png") center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+
+
+
+.sign-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.navigation{
+    background-color: black;
+    opacity: 0.5;
+    padding: 20px 70px;
+    vertical-align: center;
+    align-items: center;
+}
+
+.navigation-link-left{
+    text-decoration: none;
+    display: inline;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 19px;
+}
+
+.navigation-link-left:hover{
+    color: #39895d;
+    transition: all ease 1.5s;
+}
+
+.navigation-link-right{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    vertical-align: center;
+    text-decoration: none;
+    color: white;
+}
+.links a:hover{
+    border-bottom: 1px solid #3cb878;
+    transition: all ease 1.5s;
+}
+.icons {
+    width: 41%;
+    height: 25px;
+    display: flex;
+    border-right: 1px solid #827e7b
+}
+.icons a{
+    height: 20px;
+    margin-right: 30px;
+}
+.forum, .journey, .calendar
+{ display: inline-block;
+    background: url('../img/iconas.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left; }
+
+.calendar{
+    background-position: -20px -0px;
+    width: 28px;
+    height: 20px;
+}
+.journey {
+    background-position: -20px -40px;
+    width: 20px;
+    height: 20px;
+}
+.forum{
+    background-position: -20px -80px;
+    width: 19px;
+    height: 19px;
+}
+
+.icons a:hover {
+    text-decoration: none;
+}
+
+
+.forum:hover, .journey:hover, .calendar:hover
+{ display: inline-block;
+    background: url('../img/sprite_hover.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+    transition: all ease 1.5s;
+    text-decoration: none;
+}
+.calendar:hover {
+    background-position: -20px -0px;
+    width: 28px;
+    height: 20px;
+    text-decoration: none;
+    color: #3cb878;
+}
+.journey:hover{
+    background-position: -20px -40px;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    color: #3cb878;
+}
+.forum:hover {
+    background-position: -20px -80px;
+    width: 19px;
+    height: 19px;
+    text-decoration: none;
+    color: #3cb878;
+}
+
+
+.links a {
+    text-decoration: none;
+    color: #3cb878
+}
+
+.links{
+    padding-left: 20px;
+}
+
+.sign {
+    padding-top: 23px;
+    display: flex;
+    top: 4%;
+}
+
+.sign-up-form{
+    width: 407px;
+    height: 570px;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+   justify-content: center;
+
+}
+.green{
+    width: 18px;
+    height: 18px;
+    background-color: #3cb878;
+    border-radius: 2px;
+    display: inline-block;
+
+}
+.sign-up {
+    font-size: 25px;
+    margin: -5px -1px 23px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.log-in {
+    font-size: 18px;
+    margin: 0px 0 0 188px;
+    text-decoration: none;
+    color: #3cb878;
+}
+
+.lines {
+    width: 330px;
+    height: 20px;
+    margin: 26px 0 0 39px;
+    display: flex;
+    justify-content: space-between;
+    top: 21%;
+}
+.line-left{
+    display: inline-block;
+    background-color: #eaeaea;
+    height: 1px;
+    width: 135px;
+}
+.line-right{
+    display: inline-block;
+    background-color: #eaeaea;
+    height: 1px;
+    width: 135px;
+}
+.facebook{
+     background-color: #305db8;
+     width: 157px;
+     height: 46px;
+     border-radius: 4px;
+    display: inline-block;
+    margin-right: 15px;
+ }
+.google{
+    background-color: #df4a32;
+    width: 157px;
+    height: 46px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.facebook:hover{
+    background-color:#264b96;
+    transition: all ease 1.5s;
+}
+
+.google:hover{
+    background-color:#c3412c;
+    transition: all ease 1.5s;
+}
+
+.social-media {
+    margin: 0 0 10px 39px;
+    display: flex;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+.social-media i {
+    width: 10px;
+    height: 20px;
+    color: #fff;
+    margin: 13px;
+    padding-right: 20px;
+}
+.facebook  i {
+    border-right: 1px solid #264b96;
+}
+
+.google i {
+    border-right: 1px solid #c3412c;
+}
+
+.lines .line {
+    width: 135px;
+    height: 2px;
+    background-color: #eaeaea;
+}
+
+.lines span {
+    font-size: 14px;
+    color: rgba(132, 132 ,132 255);
+    text-align: left;
+    margin-top: -10px;
+    display: block;
+}
+
+.form input{
+    width:310px;
+    height:40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 13px 36px 2px 49px;
+    padding-left: 10px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: -9px;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+    width: 0;
+}
+label {
+    cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+    border: 1px solid #333;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    font-weight: bold;
+    height: 13px;
+    padding: 0;
+    vertical-align: top;
+    width: 13px;
+    margin-right: 8px;
+}
+input[type="checkbox"]:checked + label:before {
+
+    color: #39895d;
+    content: "\2713";
+    text-align: center;
+}
+
+.greenColor{
+    color: #3cb878;
+}
+
+.greenColor:hover{
+   border-bottom: 1px solid grey;
+    transition: ease-out 0.03s;
+}
+
+.log-in:hover{
+    border-bottom: 1px solid #3cb878;
+    transition: ease-out 0.03s;
+}
+
+.check {
+    margin: 30px 65px 20px 45px;
+    display: flex;
+}
+
+.form input:focus{
+    outline: 0;
+    border: none;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07),
+    0 2px 4px rgba(0,0,0,0.07),
+    0 4px 8px rgba(0,0,0,0.07),
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07),
+    0 32px 64px rgba(0,0,0,0.07);
+}
+
+.create-account {
+    width: 310px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 13px 60px 2px 42px;
+    padding-left: 10px;
+    background-color: #3cb878;
+    border-radius: 7px;
+}
+
+
+.create-account a {
+  text-decoration: none;
+    color: white;
+}
+.create-account:hover {
+    background-color: #39895d;
+    transition: all ease 1.5s;
+}
